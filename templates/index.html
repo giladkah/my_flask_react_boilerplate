@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{%block body%}
+
+<p>Select a document from the list.</p>
+<select id="mySelect" onchange="myFunction()">
+  <option value="Will">Will
+  <option value="Medical Care">Medical
+  <option value="Legal">Legal
+  <option value="Child">Child
+</select>
+<p>When you select a new document, a function is triggered which outputs the value of the selected document.</p>
+<p id="demo"></p>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/hello.js') }}">
+</script>
+{%endblock%}
